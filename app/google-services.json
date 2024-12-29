@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "241288873198",
+    "project_id": "finance-flow-b2d28",
+    "storage_bucket": "finance-flow-b2d28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241288873198:android:263daaaafd87065a331fff",
+        "android_client_info": {
+          "package_name": "com.example.financeflow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiXwyJG2xI7iunODtRmdrvfnPoFqwHQTY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

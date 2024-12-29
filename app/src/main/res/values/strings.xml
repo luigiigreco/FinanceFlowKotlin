@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Finance Flow</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="register_button">Registrati</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="logout">Logout</string>
+    <string-array name="currency_array">
+        <item>EUR</item>
+    </string-array>
+
+    <string-array name="budget_category_array">
+        <item>Stipendio</item>
+        <item>Alimentari</item>
+        <item>Shopping</item>
+        <item>Spese Mediche</item>
+        <item>Regali</item>
+        <item>Bollette</item>
+        <item>Tutte le Spese</item>
+    </string-array>
+
+    <string-array name="budget_frequency_array">
+        <item>Mensile</item>
+        <item>Settimanale</item>
+        <item>Annuale</item>
+    </string-array>
+</resources>

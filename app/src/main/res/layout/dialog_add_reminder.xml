@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Campo per il titolo del promemoria -->
+    <EditText
+        android:id="@+id/editTextReminderTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Titolo del Promemoria"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Campo per selezionare la data del promemoria -->
+    <EditText
+        android:id="@+id/editTextReminderDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Seleziona Data"
+        android:focusable="false"
+        app:layout_constraintTop_toBottomOf="@id/editTextReminderTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="date" />
+
+    <!-- Pulsante per aggiungere il promemoria -->
+    <Button
+        android:id="@+id/buttonAddReminder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Aggiungi"
+        app:layout_constraintTop_toBottomOf="@id/editTextReminderDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewBudgetTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aggiungi nuovo budget"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextBudgetName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome Budget" />
+
+    <EditText
+        android:id="@+id/editTextBudgetAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Importo"
+        android:inputType="numberDecimal" />
+
+    <Spinner
+        android:id="@+id/spinnerBudgetCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/currency_array"
+        android:paddingTop="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerBudgetCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/budget_category_array"
+        android:paddingTop="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerBudgetFrequency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/budget_frequency_array"
+        android:paddingTop="8dp" />
+    
+
+    <Button
+        android:id="@+id/buttonOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK" />
+
+</LinearLayout>

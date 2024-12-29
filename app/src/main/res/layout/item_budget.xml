@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Nome del Budget -->
+    <TextView
+        android:id="@+id/textViewBudgetName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nome Budget"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Totale del Budget -->
+    <TextView
+        android:id="@+id/textViewBudgetAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Totale: €1000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewBudgetName"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Importo Usato (dinamico, aggiornato con ogni transazione in uscita) -->
+    <TextView
+        android:id="@+id/textViewBudgetUsed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Usato: €0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/textViewBudgetAmount"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Data di Creazione -->
+    <TextView
+        android:id="@+id/textViewCreationDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Creato: 01/01/2024"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/textViewBudgetUsed"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Data di Scadenza -->
+    <TextView
+        android:id="@+id/textViewExpirationDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Scade: 01/02/2024"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/textViewCreationDate"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewBudgetTag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tag: Shopping"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/textViewExpirationDate"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
